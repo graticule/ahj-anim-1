@@ -1,0 +1,48 @@
+.collapsable {
+  position: relative;
+  padding: 20px;
+  max-height: 72px;
+  background-color: #ffffff;
+  overflow-y: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.collapsable:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, #ffffff00, #ffffff);
+  z-index: 100;
+}
+
+.collapsable_show {
+  height: fit-content;
+  max-height: 500px;
+}
+
+.button {
+  height: 32px;
+  padding: 0 10px;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: #0069d9;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.button:active {
+  outline: 2px solid lightblue;
+}
+
+.collapse {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #f1f1f1;
+}
